@@ -14,7 +14,7 @@ function App() {
   }, [] );
 
   async function handleAddRepository() {
-    // TODO
+
      const response = await api.post('/repositories', {
       title: 'Prog Web',
       url: 'ufopa.edu.br',
@@ -26,7 +26,7 @@ function App() {
   }
 
   async function handleRemoveRepository(id) {
-    // TODO
+
     await api.delete(`repositories/${id}`);
 
     setRepositories( repositories.filter(
